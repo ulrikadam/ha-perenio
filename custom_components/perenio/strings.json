@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à Perenio",
+        "description": "Entrez vos identifiants Perenio Smart",
+        "data": {
+          "email": "Email",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Email ou mot de passe incorrect",
+      "cannot_connect": "Impossible de se connecter au serveur Perenio"
+    },
+    "abort": {
+      "already_configured": "Ce compte est déjà configuré"
+    }
+  }
+}

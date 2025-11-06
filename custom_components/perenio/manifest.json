@@ -1,0 +1,12 @@
+{
+  "domain": "perenio",
+  "name": "Perenio Smart Cameras",
+  "documentation": "https://github.com/ulrik-adam/ha-perenio",
+  "codeowners": ["@ulrik-adam"],
+  "requirements": ["aiohttp>=3.8.0"],
+  "version": "0.1.0",
+  "iot_class": "cloud_polling",
+  "config_flow": true,
+  "dependencies": [],
+  "after_dependencies": []
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Perenio Smart Cameras",
+  "content_in_root": false,
+  "filename": "perenio",
+  "render_readme": true,
+  "country": ["BE", "FR", "NL", "LU"],
+  "homeassistant": "2023.1.0"
+}
