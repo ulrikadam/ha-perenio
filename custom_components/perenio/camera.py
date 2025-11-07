@@ -65,8 +65,12 @@ class PerenioCamera(Camera):
         self._attr_unique_id = f"perenio_{camera_id}"
         self._attr_should_poll = True
         
-        # Features supportées
-        self._attr_supported_features = CameraEntityFeature.ON_DEMAND
+        # Features supportées (ON_DEMAND disponible depuis HA 2023.8+)
+        try:
+            self._attr_supported_features = CameraEntityFeature.ON_DEMAND
+        except AttributeError:
+            # ON_DEMAND non disponible dans les anciennes versions
+            self._attr_supported_features = 0
 
     @property
     def device_info(self):
