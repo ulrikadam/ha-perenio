@@ -70,7 +70,8 @@ class PerenioCamera(Camera):
             self._attr_supported_features = CameraEntityFeature.ON_DEMAND
         except AttributeError:
             # ON_DEMAND non disponible dans les anciennes versions
-            self._attr_supported_features = 0
+            # Ne pas définir supported_features pour éviter les erreurs
+            pass
 
     @property
     def device_info(self):
